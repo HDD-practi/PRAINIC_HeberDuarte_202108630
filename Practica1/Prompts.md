@@ -1,1 +1,2 @@
-![Prompt Manual](/Practica1/PromtsImagenes/PromptManual.png)
+![Prompt Manual](/PromtsImagenes/PromptManual.png)
+![Prompt Manual](/PromtsImagenes/PromptTrifoliar.png)
