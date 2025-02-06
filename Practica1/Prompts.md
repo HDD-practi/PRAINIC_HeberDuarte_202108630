@@ -1,1 +1,1 @@
-![Prompt Manual](/Practica1/PromtsImagenes/Prompt manual.png)
+![Prompt Manual](/Practica1/PromtsImagenes/PromptManual.png)
