@@ -74,6 +74,5 @@ Si tu laptop presenta sobrecalentamiento o no se apaga correctamente por tempera
 - **Monitoreo de temperatura**: Usa software de monitoreo de temperatura para asegurarte de que no haya problemas de sobrecalentamiento.
 - **Reemplazo de batería**: Si la batería no tiene buena duración, considera reemplazarla. La mayoría de las laptops modernas permiten cambiar la batería sin mayores complicaciones.
 
----
-
-Con estos pasos, tu laptop debería estar funcionando de manera más eficiente y con un menor riesgo de sobrecalentarse. ¿Tienes alguna pregunta sobre un modelo en específico?
+## Video-tutorial de ayuda
+[Como dar mantenimiento a una laptop](https://youtu.be/VLREkS0mWXQ)
