@@ -22,12 +22,15 @@ Ya en la página, damos click en **DOWNLOADS**
 
 ### Paso 3:  
 Vamos a descargar la última versión LTS (Long Term Support), en este caso la **24.04.2 LTS**.
+![](./imagenes/2.png)
 
 ### Paso 4:  
 Descargamos una herramienta de creación USB arrancable, en este caso usaremos **Rufus**. Por lo que hay que dirigirse a [https://rufus.ie/es/](https://rufus.ie/es/) y hacer click donde marca la imagen.
+![](./imagenes/3.png)
 
 ### Paso 5:  
 En la herramienta **Rufus**, damos a **Seleccionar** y seleccionamos la imagen ISO de Lubuntu que descargamos previamente. Seleccionamos la unidad de USB a utilizar y damos a **Empezar**.
+![](./imagenes/4.png)
 
 ### Paso 6:  
 Reiniciamos la PC.
@@ -38,12 +41,15 @@ Entramos a la BIOS cuando se está produciendo el proceso de arranque. Esto gene
 ### Paso 8:  
 Ya en la BIOS, solo tenemos que cambiar la prioridad de arranque, colocando con el mouse nuestra unidad USB en la cima de las unidades de almacenamiento.  
 *(En modelos más antiguos puede que no se pueda utilizar el ratón, por lo que deberá investigar cómo se realiza esta operación para su modelo específico.)*
+![](./imagenes/5.png)
 
 ### Paso 9:  
 Aparecerá una pantalla con las opciones de la imagen a la cual debemos dar **Enter** en **Try or install Lubuntu**.
+![](./imagenes/6.png)
 
 ### Paso 10:  
 En esta pantalla, debemos dar click en **Install Lubuntu**.
+![](./imagenes/7.png)
 
 ### Paso 11:  
 Damos click en **Siguiente** en las pantallas venideras, ya que las opciones por defecto son las óptimas, a menos que de verdad necesitemos cambiar algo, lo hacemos. Esto se hace hasta llegar a la pantalla de la siguiente imagen, que necesita un poco más de explicación.
@@ -51,24 +57,31 @@ Damos click en **Siguiente** en las pantallas venideras, ya que las opciones por
 ### Paso 12:  
 En esta pantalla, seleccionamos la primera opción si deseamos borrar por completo el disco para instalar el nuevo sistema operativo. Si contamos con conocimiento sobre las particiones de un disco y deseamos realizar alguno, la segunda opción nos dejará hacerlos.  
 **Cabe aclarar que si no se sabe qué se está haciendo, se RECOMIENDA la primera opción.**
+![](./imagenes/8.png)
 
 ### Paso 13:  
 En esta pantalla, llenamos los datos que solicita y damos **Siguiente**.
+![](./imagenes/9.png)
 
 ### Paso 14:  
 En esta pantalla aparecerá un resumen con las opciones que hemos ido seleccionando hasta ahora, por lo que vale la pena dar una última revisada y verificar que todo esté correcto. Si es así, damos a **Install Now**.
+![](./imagenes/10.png)
 
 ### Paso 15:  
 Comenzará a instalarse el sistema operativo, por lo que debemos ser pacientes, ya que el tiempo de esta operación variará en función de las capacidades del equipo que estemos usando.
+![](./imagenes/11.png)
 
 ### Paso 16:  
 Terminará la instalación y nos pedirá reiniciar el equipo, por lo que hacemos click en **Done**.
+![](./imagenes/12.png)
 
 ### Paso 17:  
 Después de reiniciar, aparecerá esta pantalla. En este punto, retiramos la USB y damos **Enter**.
+![](./imagenes/13.png)
 
 ### Paso 18:  
 Y aquí ya tenemos el Linux instalado en nuestro equipo, por lo que podemos empezar a usarlo y terminar de configurarlo para ajustarlo a nuestras necesidades.
+![](./imagenes/15.png)
 
 ---
 
