@@ -17,6 +17,8 @@ Ingresar a la página de descarga de la ISO, en este caso es [https://lubuntu.me
 
 ### Paso 2:  
 Ya en la página, damos click en **DOWNLOADS**
+![](./imagenes/1.png)
+
 
 ### Paso 3:  
 Vamos a descargar la última versión LTS (Long Term Support), en este caso la **24.04.2 LTS**.
