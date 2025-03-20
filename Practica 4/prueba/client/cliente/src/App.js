@@ -8,6 +8,7 @@ import Publicaciones from "./components/Publicaciones";
 import DetallePublicacion from "./DetallePublicacion";
 import PerfilUsuario from './components/PerfilUsuario';
 import CrearPublicacion from './components/CrearPublicacion';
+import Perfil from './components/Perfil';
 
 
 function App() {

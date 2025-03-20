@@ -26,7 +26,7 @@ router.post('/publicaciones', (req, res) => {
   });
 
   router.get('/publicaciones', (req, res) => {
-    const query = 'SELECT * FROM publicaciones';
+    const query = 'SELECT * FROM publicacion';
   
     db.query(query, (err, results) => {
       if (err) {
