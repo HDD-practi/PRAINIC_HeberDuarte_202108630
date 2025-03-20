@@ -18,7 +18,7 @@ const Login = () => {
 
       if (response.status === 200) {
         // Si el login es exitoso, redirigir a la página de publicaciones
-        navigate('/home');
+        navigate('/publicaciones');
       }
     } catch (error) {
       console.error('Error al iniciar sesión', error);
