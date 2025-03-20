@@ -10,31 +10,40 @@ router.post('/login', authController.login);
 router.post('/register', authController.register);
 
 
-// Obtener detalles de una publicación por id
-router.get('/publicaciones/:id', async (req, res) => {
-  const { id } = req.params;
-  try {
-    const result = await db.query('SELECT * FROM publicacion WHERE idpublicacion = ?', [id]);
-    if (result.length === 0) {
-      return res.status(404).json({ message: 'Publicación no encontrada' });
-    }
-    res.status(200).json(result[0]); // Devolvemos solo el primer (y único) resultado
-  } catch (err) {
-    console.error('Error al obtener los detalles de la publicación:', err);
-    res.status(500).json({ message: 'Error al obtener los detalles de la publicación' });
+router.post('/publicaciones', (req, res) => {
+  const { idcurso, idcatedratico, registroacademico, publicacion, tipo } = req.body;
+
+  // Verificar que tipo sea 'catedratico' o 'curso'
+  if (tipo !== 'catedratico' && tipo !== 'curso') {
+    return res.status(400).json({ message: 'El tipo debe ser "catedratico" o "curso"' });
   }
+
+  const query = `
+    INSERT INTO publicaciones (idcurso, idcatedratico, registroacademico, publicacion, tipo)
+    VALUES (?, ?, ?, ?, ?)
+  `;
+
+  db.query(query, [idcurso, idcatedratico, registroacademico, publicacion, tipo], (err, result) => {
+    if (err) {
+      console.error('Error al crear publicación:', err);
+      return res.status(500).json({ message: 'Error al crear publicación', error: err });
+    }
+
+    res.status(201).json({ message: 'Publicación creada con éxito' });
+  });
 });
 
-router.get('/publicaciones', publicacionesController.getPublicaciones);
+router.get('/publicaciones', (req, res) => {
+  const query = 'SELECT * FROM publicaciones';
 
-// Ruta para crear una nueva publicación
-router.post('/publicaciones', publicacionesController.createPublicacion);
-
-// Ruta para obtener respuestas a una publicación
-router.get('/publicaciones/:id/respuestas', publicacionesController.getRespuestas);
-
-// Ruta para agregar una respuesta a una publicación
-router.post('/publicaciones/:id/respuestas', publicacionesController.addRespuesta);
+  db.query(query, (err, results) => {
+    if (err) {
+      console.error('Error al obtener publicaciones:', err);
+      return res.status(500).json({ message: 'Error al obtener publicaciones', error: err });
+    }
+    res.json(results);
+  });
+});
 
 module.exports = router;
 
