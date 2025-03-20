@@ -1,20 +1,30 @@
 // src/components/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 const Login = () => {
   const [registroAcademico, setRegistroAcademico] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Hook de navegación
+  const navigate = useNavigate();
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Lógica para verificar las credenciales (esto puede ser con una API real)
-    console.log('Registro Académico:', registroAcademico);
-    console.log('Contraseña:', password);
 
-    // Redirigir a una nueva página si el login es exitoso (opcional)
-    // navigate('/home');
+    try {
+      const response = await axios.post('http://localhost:5000/api/login', {
+        registroAcademico,
+        password,
+      });
+
+      if (response.status === 200) {
+        // Si el login es exitoso, redirigir a la página de publicaciones
+        navigate('/home');
+      }
+    } catch (error) {
+      console.error('Error al iniciar sesión', error);
+      alert('Credenciales incorrectas');
+    }
   };
 
   return (

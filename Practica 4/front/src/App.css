@@ -34,3 +34,46 @@ button {
 button:hover {
   background-color: #45a049;
 }
+
+.home-container {
+  padding: 20px;
+}
+
+.post-list {
+  margin-top: 20px;
+}
+
+.post {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.post h3 {
+  margin: 0;
+}
+
+.post p {
+  font-size: 14px;
+}
+
+.post a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.post-detail-container {
+  padding: 20px;
+}
+
+.responses-list {
+  margin-top: 20px;
+}
+
+.response {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
