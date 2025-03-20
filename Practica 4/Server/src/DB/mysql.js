@@ -43,8 +43,13 @@ function todos(tabla) {
     });
 }
 
-function uno(tabla, id) {
-
+function uno(tabla, codigo_curso) {
+    return  new Promise((resolve, reject) => {
+        conexion.query(`SELECT * FROM ${tabla} WHERE codigo_curso=${codigo_curso}` , (error, result) => {
+            if (error) return reject(error);
+            resolve(result);
+        });
+    });
 }
 
 function agregar(tabla, datos){
