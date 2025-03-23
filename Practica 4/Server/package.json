@@ -9,8 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
+=======
+>>>>>>> parent of b056c37 (ya va)
     "express": "^4.21.2",
     "morgan": "^1.10.0",
     "mysql2": "^3.13.0"
